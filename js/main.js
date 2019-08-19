@@ -20,9 +20,9 @@ anime.timeline({loop: false})
     targets: '.title',
     opacity: 1,
     scale: [0,1],
-    duration: 1000,
+    duration: 300,
     easing: 'easeInOutExpo',
-    delay: anime.stagger(1000)
+    delay: anime.stagger(100)
 })
 .add({
     targets: '.desc',
@@ -32,9 +32,9 @@ anime.timeline({loop: false})
     targets: '.desc .letters',
     scale: [4,1],
     opacity: [0,1],
-    duration: 500,
+    duration: 100,
     easing: 'easeInOutExpo',
-    delay: anime.stagger(50)
+    delay: anime.stagger(10)
 })
 .add({
     targets: '.btn',
@@ -48,20 +48,21 @@ anime.timeline({loop: false})
     targets: '.portfolio',
     scale: [4,1],
     opacity: [0,1],
-    duration: 1300,
+    duration: 1000,
     easing: 'easeInOutExpo',
-    delay: anime.stagger(50)
+    delay: anime.stagger(120)
 })
 .add({
     targets: 'header h1',
     direction: 'alternate',
     opacity: [0,1],
-    delay: anime.stagger(50)
+    delay: anime.stagger(30),
+    duration: 100
 })
 .add({
     targets: '.toggle',
     direction: 'alternate',
     opacity: [0,1],
-    delay: anime.stagger(50)
+    delay: anime.stagger(10)
 });
 
