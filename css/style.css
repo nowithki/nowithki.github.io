@@ -92,9 +92,10 @@ header h1{
     color:  #fff;
 }
 
-nav{
+nav,
+#about-section{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: absolute;
     background-color: #fff;
     top: 0;
@@ -122,6 +123,7 @@ nav .navbar li a{
     padding: 30px 0 10px;
     color: #333;
     transition: all ease .5s;
+    cursor: pointer;
 }
 
 nav .navbar li a:hover{
@@ -141,6 +143,10 @@ nav .sosmed li{
     margin-right: 20px;
 }
 
+nav .sosmed li:last-child{
+    margin-bottom: 10px;
+}
+
 nav .sosmed a{
     text-decoration: none;
     color: #333;
@@ -150,6 +156,10 @@ nav .sosmed a{
 
 nav .sosmed a:hover{
     color: #ffa200;
+}
+
+#about-section.menu{
+    left: 0;
 }
 
 .container .left-container .menu{
@@ -183,3 +193,142 @@ nav .sosmed a:hover{
 .portfolio img:hover{
     width: 100%;
 }
+
+#about-section{
+    height: 100vh;
+    z-index: 3;
+    overflow-y: auto;
+}
+
+.box-profile{
+    text-align: center;
+    margin-top: 10vh;
+}
+
+.box-profile img{
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.box-profile h1{
+    font-size: 20px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.box-profile h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2px 0;
+}
+
+.profile-desc{
+    margin-top: 10px;
+    text-align: justify;
+    text-indent: 0.5in;
+    padding: 0 30px;
+    font-size: 12px;
+}
+
+.box-skills{
+    width: 100%;
+    display: flex;
+}
+
+.skill{
+    flex: 1;
+    text-align: left;
+}
+
+.skill-container,
+.contact-me{
+    padding: 0 30px;
+    margin: 5px 0;
+}
+
+.skill-container h1,
+.contact-me h1{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contact-me{
+    margin-top: 10px;
+}
+
+.contact{
+    text-align: center;
+    font-size: 10px;
+}
+
+.contact p{
+    margin-bottom: 5px;
+}
+
+.sosmed a{
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.skill-desc{
+    display: inline-block;
+    font-size: 10px;
+    width: 15%;
+    margin-right: 10px;
+    text-align: left;
+}
+
+.p-10{
+    width: 10% !important;
+}
+
+.p-20{
+    width: 20% !important;
+}
+
+.p-30{
+    width: 30% !important;
+}
+
+.p-40{
+    width: 40% !important;
+}
+
+.p-50{
+    width: 50% !important; 
+}
+
+.p-60{
+    width: 60% !important;
+}
+
+.p-70{
+    width: 70% !important;
+}
+
+.p-80{
+    width: 80% !important;
+}
+
+.p-90{
+    width: 90% !important;
+}
+
+
+.skill-percentage{
+    display: inline-block;
+    height: 10px;
+    background-color: #333;
+    color: #fff;
+    font-size: 8px;
+    padding: 1px 2px;
+    text-align: right;
+}
+
+.skill-level{
+    display: inline-block;
+}
+

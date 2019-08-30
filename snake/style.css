@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body{
+    background: black;
+}
+
+.menu{
+    margin-top: 5vh;
+}
+
+#canvas{
+    margin-top: 10px;
+    background-color: black;
+    border: 2px solid white;
+}
+
+button{
+    background-color: azure;
+    width: 200px;
+    height: 40px;
+}
+.information{
+    width: 500px;
+    margin: auto;
+}
+
+.information p{
+    text-align: left;
+    color: white
+}
+
+.container-game{
+    height: 530px;
+    width: 500px;
+    margin: auto;
+}
+
+#game-over{
+    position: relative;
+    top:-506px;
+    width: 500px;
+    height: 500px;
+    margin: auto;
+    text-align: center;
+    display: none;
+}
+
+#game-over h1{
+   padding-top: 200px;
+   color: white;
+   transition: all ease .5s;
+}
