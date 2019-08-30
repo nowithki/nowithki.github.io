@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.container{
+    position: fixed;
+    background: #42455a;
+}
+
+header{
+    width: 90%;
+    height: 10vh;
+    align-items: center;
+    display: flex;
+    margin: auto;
+}
+
+#menu{
+    flex: 2;
+    display: flex;
+}
+
+#menu #logo{
+    margin-right: 15px;
+}
+
+#logo i{
+    color: #bfc0c5;
+    font-size: 25px;
+}
+
+#menu .links{
+    display: flex;
+    list-style: none;
+}
+
+.link{
+    text-decoration: none;
+    color: #bfc0c5;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.links .active{
+    color: #2188cc;
+    font-weight: 600;
+}
+
+.links a:hover{
+    color: #7292b6;
+}
+
+#login{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-login{
+    font-size: 14px;
+    background-color: #7292b6;
+    color: #42455a;
+    border-radius: 30px;
+    padding: 10px 25px;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+#login i{
+    visibility: hidden;
+    align-self: center;
+    color: #bfc0c5;
+    font-size: 25px;
+    margin-right: 10px;
+}
+
+.btn-login:hover{
+    color: #bfc0c5;
+    background-color: #2188cc;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 50% 10% 35% 5%;
+    grid-template-areas:
+        "desc desc main-img ."
+        "desc desc main-img ."
+        "desc desc main-img sosial-media"
+        "share . main-img sosial-media";
+    height: 100vh;
+}
+
+.desc{
+    grid-area: desc;    
+    align-self: center;
+    margin-bottom: 30vh;
+    padding-left: 100px;
+    padding-right: 50px;
+}
+
+.desc h1{
+    font-size: 30px;
+    color: white;
+    text-align: justify;
+}
+
+.desc p{
+    margin-top: 20px;
+    font-size: 16px;
+    text-align: justify;
+    color: #8d8d91;
+    margin-bottom: 30px;
+}
+
+.desc .btn-more{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: none;
+    font-weight: 500;
+    color: #bfc0c5;
+    border: 2px solid #bfc0c5;
+    cursor: pointer;
+}
+
+.desc .btn-more:hover{
+    color: #7292b6;
+    border-color: #7292b6;
+}
+
+.main-img{
+    grid-area: main-img;
+}
+
+.main-img img{
+    width: 400px;
+    filter:  drop-shadow(0px 2px 3px #7292b6);
+}
+
+.share{
+    grid-area: share;
+    margin-bottom: 50px;
+}
+
+.share .share-links{
+    width: 100%;
+    height: 100%;
+    background-color: #7292b6;
+    display: flex;
+    list-style: none;   
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.share-links .share-link{
+    color: #42455a;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.share-link i{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+.share-link:hover{
+    color: #bfc0c5;
+}
+
+.sosial-media{
+    grid-area: sosial-media;
+}
+
+.sosial-media .sosial-media-links{
+    list-style: none;
+}
+
+.sosial-media-link{
+    color: #bfc0c5;
+}
+
+.sosial-media-link:hover{
+    color: #7292b6;
+}
+
+.sosial-media-links li{
+    margin-top: 20px;
+}
+
+.sosial-media-links li:last-child{
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1028px){
+    #menu ul,
+    #login .btn-login{
+        visibility: hidden;
+    }   
+
+    #login i{
+        visibility: visible;
+    }
+
+    main{
+        display: inline-block;
+    }
+
+    .desc{
+        padding: 0;
+        width: 70%;
+        margin: 50px auto; 
+        margin-bottom: 5px;
+    }
+
+    .desc p{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .desc h1{
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .desc .btn-more{
+        margin: auto;
+        display: block;
+        width: 200px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .main-img img{
+        width: 250px;
+        display: block;
+        margin: auto;
+    }
+
+    .share .share-links{
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 30px;
+    }
+
+    .sosial-media{
+        height: 100px;
+        background-color: #42455a;
+    }
+
+    .sosial-media .sosial-media-links{
+        display: flex;
+        margin: 0;
+        padding: 0;
+        justify-content: space-around;
+        height: 100%;
+    }
+
+    .sosial-media-link{
+        margin: 0;
+        padding: 0;
+    }
+
+    .sosial-media-link i{
+        font-size: 30px;
+    }
+}
